@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <HeaderComp/>
+
+    <HeaderComp :ListIcons="Icons"/>
 
     <MainComp/>
 
     <FooterComp/>
+
   </div>
 </template>
 
@@ -19,6 +21,25 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp
+  },
+  data() {
+    return {
+      // array per icone social dinamiche
+      Icons: [
+        {
+          "logo": 'fa-brands fa-facebook'
+        },
+        {
+          "logo": 'fa-brands fa-twitter'
+        },
+        {
+          "logo": 'fa-brands fa-instagram'
+        },
+        {
+          "logo": 'fa-brands fa-youtube'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -30,6 +51,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 </style>
