@@ -1,26 +1,31 @@
 <template>
     <div>
         <PhoneIconsComp :ListIcons="ListIcons"/>
+
+        <JumbotronComp :NavbarList="NavbarList"/>
     </div>
 </template>
 
 <script>
 import PhoneIconsComp from './PhoneIconsComp.vue'
+import JumbotronComp from './JumbotronComp.vue'
 
-    export default {
+export default {
     name: 'HeaderComp',
     components: {
-        PhoneIconsComp
+        PhoneIconsComp,
+        JumbotronComp
     },
     props: {
-        ListIcons: Array
+        ListIcons: Array,
+        NavbarList: Array
     },
-    data(){
-    return{
-       
+    data() {
+        return {
+
+        }
     }
-  }
-    }
+}
 </script>
 
 <style lang="scss" scoped>

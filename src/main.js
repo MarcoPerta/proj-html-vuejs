@@ -15,11 +15,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
   import { faTwitter } from '@fortawesome/free-brands-svg-icons'
   import { faInstagram} from '@fortawesome/free-brands-svg-icons'
   import { faYoutube} from '@fortawesome/free-brands-svg-icons'
+  import { faPaperPlane} from '@fortawesome/free-regular-svg-icons'
 
 
 
   // / add icons to the library /
-  library.add(faPhone,faFacebook,faTwitter,faInstagram,faYoutube)
+  library.add(faPhone,faFacebook,faTwitter,faInstagram,faYoutube,faPaperPlane)
 
   // / add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)

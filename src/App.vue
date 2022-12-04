@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <HeaderComp :ListIcons="Icons"/>
+    <HeaderComp :ListIcons="Icons" :NavbarList="Navbar"/>
 
     <MainComp/>
 
@@ -37,6 +37,33 @@ export default {
         },
         {
           "logo": 'fa-brands fa-youtube'
+        }
+      ],
+      // array per elementi dinamici navbar
+      Navbar: [
+        {
+          "name": 'Home',
+          "link": '#http://a.com'
+        },
+        {
+          "name": 'Rates',
+          "link": '#http://b.com'
+        },
+        {
+          "name": 'Testimonials',
+          "link": '#http://c.com'
+        },
+        {
+          "name": 'FAQ',
+          "link": '#http://d.com'
+        },
+        {
+          "name": 'Blog',
+          "link": '#http://e.com'
+        },
+        {
+          "name": 'Contact',
+          "link": '#http://f.com'
         }
       ]
     }
