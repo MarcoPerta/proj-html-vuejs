@@ -8,6 +8,8 @@
         <JumbotronMainComp/>
 
         <TestimonialComp :TestimonialCards="TestimonialCards"/>
+
+        <FreeQuoteMainComp/>
     </div>
 </template>
 
@@ -16,6 +18,7 @@ import HeadMainComp from './HeadMainComp.vue'
 import ServiceComp from './ServiceComp.vue'
 import JumbotronMainComp from './JumbotronMainComp.vue'
 import TestimonialComp from './TestimonialComp.vue'
+import FreeQuoteMainComp from './FreeQuoteMainComp.vue'
 
 export default {
     name: 'MainComp',
@@ -23,7 +26,8 @@ export default {
         HeadMainComp,
         ServiceComp,
         JumbotronMainComp,
-        TestimonialComp
+        TestimonialComp,
+        FreeQuoteMainComp
     },
     props: {
         ServicesCards: Array,
