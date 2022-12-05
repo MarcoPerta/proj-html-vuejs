@@ -6,6 +6,8 @@
         <ServiceComp :ServicesCards="ServicesCards"/>
 
         <JumbotronMainComp/>
+
+        <TestimonialComp :TestimonialCards="TestimonialCards"/>
     </div>
 </template>
 
@@ -13,16 +15,19 @@
 import HeadMainComp from './HeadMainComp.vue'
 import ServiceComp from './ServiceComp.vue'
 import JumbotronMainComp from './JumbotronMainComp.vue'
+import TestimonialComp from './TestimonialComp.vue'
 
 export default {
     name: 'MainComp',
     components: {
         HeadMainComp,
         ServiceComp,
-        JumbotronMainComp
+        JumbotronMainComp,
+        TestimonialComp
     },
     props: {
-        ServicesCards: Array
+        ServicesCards: Array,
+        TestimonialCards: Array
     }
 }
 </script>

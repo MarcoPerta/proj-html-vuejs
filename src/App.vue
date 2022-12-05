@@ -3,10 +3,9 @@
 
     <HeaderComp :ListIcons="Icons" :NavbarList="Navbar"/>
 
-    <MainComp :ServicesCards="ServicesCards"/>
+    <MainComp :ServicesCards="ServicesCards" :TestimonialCards="TestimonialCards"/>
 
     <FooterComp/>
-
 
   </div>
 </template>
@@ -83,6 +82,24 @@ export default {
           "img": 'avada-movers-servicethreephoto-final-400x255.jpg',
           "title": 'Coast To Coast',
           "paragraph": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque aliquam, maxime labore esse pariatur accusamus, facilis odit voluptatum non, obcaecati quaerat saepe accusantium. Fuga facere harum veniam ducimus reprehenderit?'
+        }
+      ],
+      // array per card dinamiche nel testimonialComp
+      TestimonialCards: [
+        {
+          "img": 'avada-movers-janedoe-final-200x200.jpg',
+          "name": 'Jane Doe',
+          "description": '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi iste fugit asperiores eos qui laboriosam cupiditate vero id velit ducimus. Aliquid magnam consequuntur nihil quod ipsam cumque pariatur dolore labore."'
+        },
+        {
+          "img": 'avada-movers-johndoe-final-200x200.jpg',
+          "name": 'Jhon Doe',
+          "description": '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi iste fugit asperiores eos qui laboriosam cupiditate vero id velit ducimus. Aliquid magnam consequuntur nihil quod ipsam cumque pariatur dolore labore."'
+        },
+        {
+          "img": 'avada-movers-johnsmith-final-200x200.jpg',
+          "name": 'Jhon Smith',
+          "description": '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi iste fugit asperiores eos qui laboriosam cupiditate vero id velit ducimus. Aliquid magnam consequuntur nihil quod ipsam cumque pariatur dolore labore."'
         }
       ]
     }
