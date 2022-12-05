@@ -1,13 +1,18 @@
 <template>
     <div>
-
+        <HeadMainComp/>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import HeadMainComp from './HeadMainComp.vue'
+
+export default {
+    name: 'MainComp',
+    components: {
+        HeadMainComp
+    },
+}
 </script>
 
 <style lang="scss" scoped>
