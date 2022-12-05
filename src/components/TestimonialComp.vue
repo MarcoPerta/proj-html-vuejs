@@ -7,6 +7,7 @@
                 <!-- ciclo per card dinamiche testimonial -->
                 <TestimonialCard v-for="(elem,index) in TestimonialCards" :key="index" :TestimonialCards="elem"/>
             </div>
+            <button class="btn-blue">READ MORE TESTIMONIALS</button>
         </div>
     </div>
 </template>
@@ -39,8 +40,18 @@ export default {
         color: #6bbb14;
         padding: 20px 0px;
     }
-}
-.container-cards{
-    display: flex;
+
+    .container-cards {
+        display: flex;
+    }
+    .btn-blue {
+        color: white;
+        border: none;
+        padding: 15px;
+        background-color: #1975c0;
+        border-radius: 30px;
+        margin-left: 15px;
+        margin: 40px 0px;
+    }
 }
 </style>
