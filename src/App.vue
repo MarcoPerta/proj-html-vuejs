@@ -3,9 +3,10 @@
 
     <HeaderComp :ListIcons="Icons" :NavbarList="Navbar"/>
 
-    <MainComp/>
+    <MainComp :ServicesCards="ServicesCards"/>
 
     <FooterComp/>
+
 
   </div>
 </template>
@@ -64,6 +65,24 @@ export default {
         {
           "name": 'Contact',
           "link": '#http://f.com'
+        }
+      ],
+      // array per le card dinamiche del main -- ServiceComp
+      ServicesCards: [
+        {
+          "img": 'avada-movers-serviceonephoto-final-400x255.jpg',
+          "title": 'Two Man Teams',
+          "paragraph": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque aliquam, maxime labore esse pariatur accusamus, facilis odit voluptatum non, obcaecati quaerat saepe accusantium. Fuga facere harum veniam ducimus reprehenderit?'
+        },
+        {
+          "img": 'avada-movers-servicetwophoto-final-400x255.jpg',
+          "title": 'We Do All The Lifting',
+          "paragraph": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque aliquam, maxime labore esse pariatur accusamus, facilis odit voluptatum non, obcaecati quaerat saepe accusantium. Fuga facere harum veniam ducimus reprehenderit?'
+        },
+        {
+          "img": 'avada-movers-servicethreephoto-final-400x255.jpg',
+          "title": 'Coast To Coast',
+          "paragraph": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque aliquam, maxime labore esse pariatur accusamus, facilis odit voluptatum non, obcaecati quaerat saepe accusantium. Fuga facere harum veniam ducimus reprehenderit?'
         }
       ]
     }
