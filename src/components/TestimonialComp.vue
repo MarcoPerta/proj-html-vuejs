@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg">
         <div class="container">
             <h6>HAPPY COSTUMERS</h6>
             <h2>Testimonials</h2>
@@ -27,7 +27,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+
+.bg{
+    background-image: url(../assets/images/avada-movers-testimonial-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
     width: 80%;
     margin: auto;
 
@@ -53,5 +58,6 @@ export default {
         margin-left: 15px;
         margin: 40px 0px;
     }
+}
 }
 </style>
