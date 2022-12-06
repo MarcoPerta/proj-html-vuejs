@@ -10,14 +10,14 @@
                 </div>
             </div>
             <div class="jumbotron-text">
-                <h6>MOVING WITHOUT THE HASSLE</h6>
-                <h2>WE MAKE IT SIMPLE</h2>
-                <h6>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h6>
+                <h5>MOVING WITHOUT THE HASSLE</h5>
+                <h2 class="big">WE MAKE IT SIMPLE</h2>
+                <h5>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h5>
             </div>
         </div>
         <div class="free-quote">
-            <font-awesome-icon icon="fa-regular fa-paper-plane" />
-            <span>GET A FREE QUOTE ONLINE NOW!</span>
+                <font-awesome-icon icon="fa-regular fa-paper-plane" />
+                <span>GET A FREE QUOTE ONLINE NOW!</span>
         </div>
     </div>
 </template>
@@ -39,32 +39,43 @@ import NavbarComp from './NavbarComp.vue'
 <style lang="scss" scoped>
 .img-background{
     background-image: url(../assets/images/avada-movers-homeherobackground-final.jpg);
-    height: 350px;
+    height: 530px;
     background-repeat: no-repeat;
     background-size: cover;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0px;
-        width: 80%;
-        margin: auto;
-        .navbar-button{
+    .container {
             display: flex;
-            padding: 0 5px;
+            justify-content: space-between;
             align-items: center;
-            .btn-blue{
-                color: white;
-                border: none;
-                padding: 15px;
-                background-color: #1975c0;
-                border-radius: 30px;
-                margin-left: 15px;
+            padding: 10px 0px;
+            width: 80%;
+            margin: auto;
+    
+            .navbar-button {
+                display: flex;
+                padding: 0 5px;
+                align-items: center;
+    
+                .btn-blue {
+                    color: white;
+                    border: none;
+                    padding: 15px;
+                    background-color: #1975c0;
+                    border-radius: 30px;
+                    margin-left: 15px;
+                }
+    
+                // .btn-blue .btn-blue:hover {
+                //     // background-color: rgba(27,116,195, 1.5);
+                //     background-color: red;
+                // }
             }
         }
-    }
     .jumbotron-text{
-        padding-top: 65px;
+        padding-top: 85px;
+        .big{
+            font-size: 60px;
+            color: black;
+        }
     }
 }
 .free-quote{
@@ -75,4 +86,9 @@ import NavbarComp from './NavbarComp.vue'
         margin-left: 8px;
     }
 }
+// .free-quote :hover{
+//     // background-color: rgba(27,116,195, 1.5);
+//     background-color: red;
+// }
+
 </style>

@@ -19,4 +19,8 @@ a{
     padding: 0px 5px;
     text-decoration: none;
 }
+
+div a:hover{
+    color: #6bbb14;
+}
 </style>

@@ -1,6 +1,8 @@
 <template>
         <div>
-            <img :src="require(`../assets/images/${ServicesCards.img}`)" alt="">
+            <div class="container-img">
+                <img :src="require(`../assets/images/${ServicesCards.img}`)" alt="">
+            </div>
             <h3>{{ServicesCards.title}}</h3>
             <p>{{ServicesCards.paragraph}}</p>
             <button class="btn-blue">READ MORE</button>
@@ -26,8 +28,13 @@ div {
     }
 
     img{
-        width: 100%;
+        width: 90%;
         padding: 10px;
+        transition: transform 1s;
+    }
+
+    .container-img :hover {
+        transform: scale(1.1,1.1);
     }
 
     p{

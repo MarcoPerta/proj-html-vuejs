@@ -7,6 +7,8 @@
 
     <FooterComp :NavbarList="Navbar" :ListIcons="Icons"/>
 
+    <div class="to-top"><a href="#top"><font-awesome-icon icon="fa-solid fa-chevron-up" /></a></div>
+
   </div>
 </template>
 
@@ -117,8 +119,23 @@ export default {
   text-align: center;
   color: #2c3e50;
   font-family: 'Roboto', sans-serif;
-
 }
+
+.to-top{
+  width: 60px;
+  height: 45px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #4d596a;
+  bottom: 0;
+  margin-left: 883px;
+  position: sticky;
+  padding: 15px 0px;
+  a {
+    color: white;
+    font-size: 1.25rem;
+  }
+}
+
 *{
   padding: 0;
   margin: 0;

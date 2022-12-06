@@ -80,5 +80,9 @@ export default {
             font-size: 0.813rem;
         }
     }
+
+    li a:hover {
+        color: #6bbb14;
+    }
 }
 </style>
