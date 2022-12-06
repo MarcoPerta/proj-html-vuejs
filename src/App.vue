@@ -5,7 +5,7 @@
 
     <MainComp :ServicesCards="ServicesCards" :TestimonialCards="TestimonialCards"/>
 
-    <FooterComp/>
+    <FooterComp :NavbarList="Navbar"/>
 
   </div>
 </template>

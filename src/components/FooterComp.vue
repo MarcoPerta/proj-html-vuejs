@@ -1,13 +1,21 @@
 <template>
     <div>
-
+        <LinksComp :NavbarList="NavbarList"/>
     </div>
 </template>
 
 <script>
-    export default {
-        
+import LinksComp from './LinksComp.vue'
+
+export default {
+    name: 'FooterComp',
+    components: {
+        LinksComp
+    },
+    props: {
+        NavbarList: Array
     }
+}
 </script>
 
 <style lang="scss" scoped>
