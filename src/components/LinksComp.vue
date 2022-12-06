@@ -74,6 +74,11 @@ export default {
         img{
             padding: 20px 0px;
         }
+
+        .fa-chevron-right{
+            padding: 0px 5px;
+            font-size: 0.813rem;
+        }
     }
 }
 </style>

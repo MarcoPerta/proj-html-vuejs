@@ -5,7 +5,7 @@
 
     <MainComp :ServicesCards="ServicesCards" :TestimonialCards="TestimonialCards"/>
 
-    <FooterComp :NavbarList="Navbar"/>
+    <FooterComp :NavbarList="Navbar" :ListIcons="Icons"/>
 
   </div>
 </template>
@@ -108,12 +108,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-family: 'Roboto', sans-serif;
+
 }
 *{
   padding: 0;

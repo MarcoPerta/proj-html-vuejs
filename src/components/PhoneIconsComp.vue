@@ -34,7 +34,7 @@ import IconsComp from './IconsComp.vue'
 
 <style lang="scss" scoped>
 .bg-Lima{
-    background-color: #69bf14;
+    background-color: #6bbb14;
     width: 100%;
     .set-father {
             width: 80%;
